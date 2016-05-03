@@ -16,10 +16,10 @@ $(document).ready(function(){
     myDiv.css("background-color", colorList[i]);
     $("body").append(myDiv);
  }
-    $("#ed").click(function(){ 
-    for (i = 0; i < colorList.length; i++){
-      $("body").Math.random(colorList.length);
-    }
+    $("#startColor").click(function(){ 
+      var bodyColor = Math.floor(Math.random() * colorList.length) + 0;
+     $("body").css("background-color",  colorList[bodyColor]);
+     
     });
  
 });
